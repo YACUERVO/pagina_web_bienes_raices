@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienes Rices</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700;900&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body> 
+   <header class="site-header">
+       <div class="contenedor contenido-header">
+           <div class="barra">
+    
+                <a href="/">
+                    <img src="img/logo.svg" alt="Logototipo de bienes raices">
+                </a>
+                <nav class="navegacion">
+                    <a target ="_blank" href="Nosotros.html">Nosotros</a>
+                    <a target ="_blank" href="Anuncios.html">Anuncios</a>
+                    <a target ="_blank" href="Blog.html">Blog</a>
+                    <a target ="_blank" href="Contacto.html">Contacto</a>
+                </nav> 
+            </div><!--barra de navegación-->         
+                
+       </div> <!--contenedor-->
+    </header>
+    
+    <h1 class="fw-300 central-texto"> Contacto</h1>
+    <div class="imagen-destacada">
+        <img src="img/destacada3.jpg" alt="imagen principal">
+    </div>        
+    <main class="contenedor seccion contenido-centrado">
+        <h2 class="fw-300 central-texto">Llene el Formulario de Contacto</h2>
+        <form class="contacto" action="">
+            <fieldset> <!--El elemento fieldset (grupo de campos) permite organizar en grupos los campos de un formulario. -->
+                <legend>Información Personal</legend> <!--El elemento <legend> (leyenda) crea un título para un grupos los campos (<fieldset>) de un formulario -->
+                <label for="nombre">Nombre</label> <!--Que elemento pertenece el label-->
+                <input type="text" id="nombre" placeholder="Tu Nombre"> <!--campo de texto solo para texto-->
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" placeholder="Tu Correo Electronico" required>
+
+                <label for="telefono">Telefono</label>
+                <input type="tel" id="telefono" placeholder="Tu Telefono" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje"></textarea>
+            </fieldset> <!--El elemento fieldset (grupo de campos) permite organizar en grupos los campos de un formulario. -->
+            <fieldset>
+                <legend>Información Sobre Propiedad</legend>
+                <label for="opciones">Vende o Compra</label>
+                <select id="opciones">
+                    <option value="" disabled selected>--Seleccione</option> <!--Para desabilitar la opcion de seleccionar-->
+                    <option value="Compra">Compra</option>
+                    <option value="Vende">Vende</option>
+                </select>     
+                <label for="cantidad">Cantidad</label>
+                <input type="number" min="0" max="10" step="5">
+            </fieldset>
+            <fieldset>
+                <legend>Contacto</legend>
+                <p>Como desea ser contactado</p>
+                <div class="forma-contacto">
+                    <label for="Telefono">Telefono</label>
+                    <input type="radio" name="Contacto" value="telefono" id="Telefono">
+
+                    <label for="correo">E-mai</label>
+                    <input type="radio" name="Contacto" value="correo" id="correo">   <!-- Se utilizar el Radio para seleccionar una unica opcion -->
+                </div>
+                <p>Si eligio telefono, elija la fecha y la hora</p>
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fehca">   <!--Para fechas para poder elegir-->
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" min="09:00" max="18:00"> <!--Para hora poder elegir-->
+
+                
+            </fieldset>
+
+
+            <input type="submit" value="Enviar" class="boton boton-verde">
+        </form>
+        
+    </main>
+<footer class="site-footer seccion">
+    <div class="contenedor contenedor-footer">
+        <nav class="navegacion">
+            <a target ="_blank" href="Nosotros.html">Nosotros</a>
+            <a target ="_blank" href="Anuncios.html">Anuncios</a>
+            <a target ="_blank" href="Blog.html">Blog</a>
+            <a target ="_blank" href="Contacto.html">Contacto</a>
+        </nav>
+        <p class="copyright">Todos los derechos reservados 2019 &copy;</p>
+    </div>
+</footer>
+</body>
+</html>
